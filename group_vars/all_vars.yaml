@@ -1,0 +1,10 @@
+MONGODB_HOST: mongodb.prav4cloud.online
+REDIS_HOST: redis.prav4cloud.online
+CATALOGUE_HOST: catalogue.prav4cloud.online
+CART_HOST: cart.prav4cloud.online
+MYSQL_HOST: mysql.prav4cloud.online
+USER_HOST: user.prav4cloud.online
+RABBITMQ_HOST: rabbitmq.prav4cloud.online
+SHIPPING_HOST: shipping.prav4cloud.online
+PAYMENT_HOST: payment.prav4cloud.online
+

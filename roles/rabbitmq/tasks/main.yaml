@@ -1,0 +1,26 @@
+- name: copy {{ component }} repo
+  ansible.builtin.copy:
+    src: "{{ component }}.repo"
+    dest: "/etc/yum.repos.d/{{ component }}.repo"
+
+- name: Install {{ component }}
+  ansible.builtin.package:
+    name: "{{ component }}-server"
+    state: present
+
+- name: start and enable service
+  ansible.builtin.service:
+    name: "{{ component }}-server"
+    state: started
+    enabled: yes
+    
+- name: create and provide permissions to user
+  community.rabbitmq.rabbitmq_user: # Taken community module
+    user: roboshop
+    password: roboshop123
+    permissions:
+      - vhost: /
+        configure_priv: .*
+        read_priv: .*
+        write_priv: .*
+    state: present
