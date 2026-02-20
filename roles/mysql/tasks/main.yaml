@@ -1,7 +1,15 @@
-- name: Install {{ component }} server
+- name: Install mysql server
   ansible.builtin.package:
-    name: "{{ component }}-server"
+    name: mysql-server
     state: present
+
+- name: install mysql python libraries
+  ansible.builtin.pip:
+    executable: pip3.9
+    name: "{{ item }}"
+  loop:
+  - botocore
+  - boto3
 
 - name: start and enable service
   ansible.builtin.service:
