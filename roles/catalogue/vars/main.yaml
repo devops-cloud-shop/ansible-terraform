@@ -1,1 +1,1 @@
-MONGODB_HOST: mongodb.prav4cloud.online
+MONGODB_HOST: mongodb-{{ env }}.prav4cloud.online
