@@ -1,10 +1,10 @@
 MONGODB_HOST: mongodb-{{ env }}.prav4cloud.online #mongodb-dev.prav4cloud.online
 REDIS_HOST: redis-{{ env }}.prav4cloud.online
-CATALOGUE_HOST: catalogue-backend-alb-{{ env }}.prav4cloud.online #catalogue.backend-alb-dev.prav4cloud.online
-CART_HOST: cart-backend-alb-{{ env }}.prav4cloud.online
+CATALOGUE_HOST: catalogue.backend-alb-{{ env }}.prav4cloud.online #catalogue.backend-alb-dev.prav4cloud.online
+CART_HOST: cart.backend-alb-{{ env }}.prav4cloud.online
 MYSQL_HOST: mysql-{{ env }}.prav4cloud.online
-USER_HOST: user-backend-alb-{{ env }}.prav4cloud.online
+USER_HOST: user.backend-alb-{{ env }}.prav4cloud.online
 RABBITMQ_HOST: rabbitmq-{{ env }}.prav4cloud.online
-SHIPPING_HOST: shipping-backend-alb-{{ env }}.prav4cloud.online
-PAYMENT_HOST: payment-backend-alb-{{ env }}.prav4cloud.online
+SHIPPING_HOST: shipping.backend-alb-{{ env }}.prav4cloud.online
+PAYMENT_HOST: payment.backend-alb-{{ env }}.prav4cloud.online
 
