@@ -1,5 +1,5 @@
-CART_HOST: cart.backend-alb-{{ env }}.prav4cloud.online
-USER_HOST: user.backend-alb-{{ env }}.prav4cloud.online
-RABBITMQ_HOST: rabbitmq-{{ env }}.prav4cloud.online
+# CART_HOST: cart.backend-alb-{{ env }}.prav4cloud.online
+# USER_HOST: user.backend-alb-{{ env }}.prav4cloud.online
+# RABBITMQ_HOST: rabbitmq-{{ env }}.prav4cloud.online
 RABBITMQ_USER: roboshop
 RABBITMQ_PASSWORD: roboshop123
